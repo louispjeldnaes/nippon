@@ -373,12 +373,66 @@ header li.dropdown {
 }
 
 #voresRetter .blaaCirkel {
-  width: 10%;
+  width: 27%;
+  position: absolute;
+  top: 160vw;
+  left: -10vw;
+  z-index: -1;
 }
 
 #voresRetter .vegetable {
-  position: relative;
-  width: 10%;
-  top: 0;
-  right: 0;
+  position: absolute;
+  width: 18%;
+  top: 177vw;
+  left: 0;
+}
+
+/*4. SEKTION - HVORFOR NIPPON?*/
+
+#infoSektion {
+  width: 90%;
+  margin: auto;
+  margin-top: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+#familieImage {
+  background-image: url(images/familie.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20%;
+  margin-right: 5vw;
+  border-radius: 30px;
+}
+
+.infoboks {
+  display: flex;
+}
+
+#infoContainer {
+  width: 40%;
+}
+
+#infoSektion h2,
+#infoSektion h5,
+#infoSektion p {
+  text-align: left;
+}
+#infoSektion p {
+  padding: 0;
+}
+
+#infoSektion p {
+  padding: 0.5vw 0vw 0.5vw 0vw;
+}
+
+.infoboks img {
+  width: 8vw;
+  margin: 2vw;
+}
+
+.infoTekst {
+  padding-top: 1vw;
+  width: 100%;
 }
