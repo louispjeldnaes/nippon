@@ -238,7 +238,7 @@ header li.dropdown {
   width: 60%;
   background-color: #fbfbfb;
   margin: auto;
-  box-shadow: 2px 2px 15px #888888;
+  box-shadow: 2px 2px 5px #888888;
   border-radius: 35px;
   padding: 3vw 5vw 3vw 5vw;
 }
@@ -441,13 +441,54 @@ header li.dropdown {
   width: 100%;
 }
 
+/*VORES KUNDER SIGER*/
+
+.stjerner img {
+  width: 3vw;
+}
+
+#kunder {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10vw;
+  margin-top: 15vw;
+}
+
+.treKort {
+  display: flex;
+}
+
+.treKort .hvidInfoBoks {
+  padding: 1.5vw;
+  width: 28%;
+
+  position: static;
+  top: 0;
+  margin-top: 3vw;
+}
+
+#hvidloeg {
+  width: 20%;
+  transform: rotate(300deg);
+  position: absolute;
+  top: 225vw;
+  left: -1vw;
+}
+
+#kunder .blaaCirkel {
+  width: 30%;
+  position: absolute;
+  top: 230vw;
+  right: 5vw;
+  z-index: -1;
+}
+
 /*FOOTER*/
 footer {
   background-color: #cad9d0;
   display: flex;
   justify-content: space-around;
   padding: 10vw 12vw 8vw 12vw;
-  margin-top: 10vw;
 }
 
 footer li,
