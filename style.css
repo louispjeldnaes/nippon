@@ -7,8 +7,120 @@
 */
 
 * {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: ;
+  background-color: #f0f0ed;
+}
+
+main {
+  margin-top: 5vw;
+}
+
+img {
+  width: 100%;
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #5f5658;
+  font-size: 1.2vw;
+}
+
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #fbfbfb;
+  height: 5vw;
+  width: 100%;
+  box-shadow: 2px 2px 15px #888888;
+  position: fixed;
+  top: 0;
+}
+#logo {
+  width: 10vw;
+  margin-right: 5vw;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  float: left;
+}
+
+header li a,
+.dropbtn {
+  display: inline-block;
+  color: #5f5658;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1.5vw;
+  text-decoration: none;
+  font-size: 1.2vw;
+  font-weight: 300;
+}
+
+header li a:hover,
+.dropdown:hover .dropbtn {
+  border-bottom: 1px solid #ea6a6a;
+}
+
+header li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fbfbfb;
+  border-radius: 15px;
+  min-width: 200px;
+  min-height: 200px;
+  box-shadow: 2px 2px 15px #888888;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #fbfbfb;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.blaaKnap {
+  background-color: #cad9d0;
+  padding: 0.5vw 1.8vw 0.5vw 1.8vw;
+  border-radius: 35px;
+  margin-top: 1.2vw;
+  font-weight: 600;
+  margin-left: 17vw;
+}
+
+.blaaKnap:hover {
+  background-color: #1ed4a7;
+}
+
+/*SEKTION 1 - INTRO*/
+
+#intro {
+  display: flex;
 }
