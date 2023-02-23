@@ -12,10 +12,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+  color: #5f5658;
 }
 
 body {
   background-color: #f0f0ed;
+  overflow-x: hidden;
 }
 
 main {
@@ -25,11 +28,57 @@ main {
 img {
   width: 100%;
 }
+
 a {
   text-transform: uppercase;
   text-decoration: none;
   color: #5f5658;
   font-size: 1.2vw;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3vw;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2.5vw;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.5vw;
+}
+
+p {
+  font-size: 1.3vw;
+  text-align: center;
+  padding: 1.5vw;
+}
+.blaaKnap {
+  background-color: #cad9d0;
+  padding: 0.5vw 1.8vw 0.5vw 1.8vw;
+  border-radius: 35px;
+  margin-top: 1.2vw;
+  font-weight: 600;
+  margin-left: 17vw;
+}
+
+.blaaKnap:hover {
+  background-color: #1ed4a7;
+}
+
+.roedKnap {
+  background-color: #ea6a6a;
+  color: #fbfbfb;
+  padding: 0.7vw 2.2vw 0.7vw 2.2vw;
+  border-radius: 35px;
+  font-weight: 600;
+}
+.roedKnap:hover {
+  background-color: #1ed4a7;
 }
 
 /*HEADER*/
@@ -42,6 +91,7 @@ header {
   box-shadow: 2px 2px 15px #888888;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 #logo {
   width: 10vw;
@@ -106,21 +156,87 @@ header li.dropdown {
   display: block;
 }
 
-.blaaKnap {
-  background-color: #cad9d0;
-  padding: 0.5vw 1.8vw 0.5vw 1.8vw;
-  border-radius: 35px;
-  margin-top: 1.2vw;
-  font-weight: 600;
-  margin-left: 17vw;
-}
-
-.blaaKnap:hover {
-  background-color: #1ed4a7;
-}
-
 /*SEKTION 1 - INTRO*/
 
 #intro {
+  display: flex;
+}
+
+#introTekst {
+  width: 50%;
+}
+
+#introTekst .roedKnap {
+  margin-left: 6.8vw;
+}
+
+#introTekst {
+  padding: 10vw;
+  padding-top: 13vw;
+}
+
+/*Venstre side*/
+
+#imagesVenstre,
+#imagesHoejre {
+  width: 25%;
+}
+.roedCirkelIntro {
+  position: relative;
+  width: 150%;
+  left: -10vw;
+  top: -16vw;
+}
+
+#spinat {
+  position: absolute;
+  width: 40%;
+  left: -18vw;
+  transform: rotate(95deg);
+  top: 15vw;
+}
+
+.svampe {
+  position: absolute;
+  width: 15%;
+  left: 0vw;
+  transform: rotate(40deg);
+  top: 42vw;
+}
+
+/*Højre side*/
+
+#meatballCutout {
+  position: relative;
+  width: 220%;
+  top: -10vw;
+  right: 13vw;
+  transform: rotate(20deg);
+}
+
+.blaaCirkel {
+  position: relative;
+  right: -10vw;
+}
+
+#vegetable {
+  position: absolute;
+  width: 18%;
+  right: -5vw;
+  top: 57vw;
+}
+
+/*SEKTION 2 - HVORDAN FUNGERER DET? */
+
+.hvidInfoBoks {
+  width: 60%;
+  background-color: #fbfbfb;
+  margin: auto;
+  box-shadow: 2px 2px 15px #888888;
+  border-radius: 35px;
+  padding: 3vw 5vw 3vw 5vw;
+}
+
+#treKolonner {
   display: flex;
 }
