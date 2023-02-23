@@ -131,7 +131,7 @@ header li a,
 
 header li a:hover,
 .dropdown:hover .dropbtn {
-  border-bottom: 1px solid #ea6a6a;
+  color: #ea6a6a;
 }
 
 header li.dropdown {
@@ -142,8 +142,7 @@ header li.dropdown {
   display: none;
   position: absolute;
   background-color: #fbfbfb;
-  border-radius: 15px;
-  min-width: 200px;
+  min-width: 10vw;
   min-height: 200px;
   box-shadow: 2px 2px 15px #888888;
   z-index: 1;
@@ -162,6 +161,48 @@ header li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/*HEADER MOBIL*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fbfbfb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 5vw;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ea6a6a;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  width: 10vw;
+  margin-top: 5.5vw;
+  margin-right: 8vw;
 }
 
 /*SEKTION 1 - INTRO*/
@@ -511,4 +552,33 @@ footer p {
 
 .appStoreImages div {
   width: 10vw;
+}
+
+/*LAPTOP*/
+@media screen and (min-width: 768px) {
+  #navMobil {
+    display: none;
+  }
+  #logo {
+    width: 10vw;
+    margin-right: 5vw;
+  }
+}
+
+/*MOBIL*/
+@media screen and (max-width: 768px) {
+  #navLaptop,
+  header .blaaKnap {
+    display: none;
+  }
+
+  header {
+    height: 18vw;
+    justify-content: space-between;
+  }
+
+  #logo {
+    width: 35vw;
+    margin-left: 2vw;
+  }
 }
