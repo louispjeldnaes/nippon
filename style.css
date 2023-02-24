@@ -85,6 +85,7 @@ ul {
   border-radius: 35px;
   font-weight: 600;
 }
+
 .roedKnap:hover {
   background-color: #1ed4a7;
 }
@@ -213,11 +214,12 @@ header li.dropdown {
 
 #introTekst {
   width: 50%;
-}
-
-#introTekst {
   padding: 10vw;
   padding-top: 13vw;
+}
+#introTekst h5 {
+  margin-top: 2vw;
+  margin-bottom: 5vw;
 }
 
 /*Venstre side*/
@@ -313,10 +315,6 @@ header li.dropdown {
 
 #treKolonner .kolonne {
   width: 30%;
-}
-
-#treKolonner .blaaKnap {
-  margin-left: 0vw;
 }
 
 #sesamForside {
@@ -502,7 +500,6 @@ header li.dropdown {
 .treKort .hvidInfoBoks {
   padding: 1.5vw;
   width: 28%;
-
   position: static;
   top: 0;
   margin-top: 3vw;
@@ -566,7 +563,45 @@ footer p {
 }
 
 /*MOBIL*/
+
 @media screen and (max-width: 768px) {
+  /*GENERELT*/
+
+  main {
+    margin-top: 18vw;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  h2 {
+    font-size: 6.5vw;
+  }
+
+  h3 {
+    font-size: 4.5vw;
+  }
+
+  h5 {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 3.5vw;
+  }
+
+  .roedKnap {
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 35px;
+  }
+
+  a {
+    font-size: 3.5vw;
+  }
+
+  /*Header*/
+
   #navLaptop,
   header .blaaKnap {
     display: none;
@@ -580,5 +615,222 @@ footer p {
   #logo {
     width: 35vw;
     margin-left: 2vw;
+  }
+
+  /*Intro*/
+
+  #introTekst {
+    width: 80%;
+    padding: 1vw;
+    padding-top: 25vw;
+  }
+
+  .roedCirkelIntro {
+    width: 250%;
+    left: -15vw;
+    top: -18vw;
+  }
+
+  #spinat {
+    width: 80%;
+    left: -45vw;
+    transform: rotate(95deg);
+    top: 28vw;
+  }
+
+  .svampe {
+    display: none;
+  }
+
+  #meatballCutout {
+    width: 420%;
+    top: -25vw;
+    right: 33vw;
+  }
+
+  .blaaCirkel {
+    width: 220%;
+    right: 0vw;
+  }
+
+  .vegetable {
+    width: 28%;
+    right: -12vw;
+    top: 97vw;
+  }
+
+  /*Hvordan fungerer det-sektion*/
+
+  .hvidInfoBoks {
+    top: 0;
+    width: 70%;
+    margin: 10vw auto 10vw auto;
+    padding: 5vw;
+    padding-bottom: 10vw;
+  }
+
+  #treKolonner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+  }
+
+  #treKolonner .kolonne {
+    width: 80%;
+    margin-bottom: 5vw;
+  }
+
+  #treKolonner .treKolonnerIMG {
+    height: auto;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+  }
+
+  #phoneSVG {
+    height: 23vw;
+  }
+
+  #truckSVG {
+    padding: 5vw;
+  }
+  #ramenSVG {
+    padding: 5vw;
+  }
+  .hvidInfoBoks .blaaKnap {
+    margin: 0;
+    padding: 2vw 5vw 2vw 5vw;
+  }
+
+  #sesamForside {
+    display: none;
+  }
+
+  /*VORES RETTER*/
+  #voresRetter {
+    margin-top: 20vw;
+  }
+
+  .containerRetter {
+    margin-top: 6vw;
+  }
+
+  .boksRetter {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8vw;
+    height: 60vw;
+  }
+  .tekstboksRetter {
+    top: 40vw;
+    padding: 2vw;
+    padding-left: 6vw;
+  }
+
+  #voresRetter .blaaCirkel,
+  #voresRetter .vegetable {
+    display: none;
+  }
+
+  /*HVORFOR NIPPON?*/
+  #infoSektion {
+    width: 90%;
+    margin: auto;
+    margin-top: 20vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #familieImage {
+    /*(DETTE SKAL LAVES OM!!)*/
+    background-image: url(images/familie.jpg);
+    width: 80%;
+    height: 45vw;
+    margin-right: 0vw;
+  }
+
+  #infoContainer {
+    width: 80%;
+    margin-top: 10vw;
+  }
+
+  .infoboks img {
+    width: 25vw;
+    margin-left: 0vw;
+  }
+
+  #infoSektion h2,
+  #infoSektion h5,
+  #infoSektion p {
+    text-align: right;
+  }
+
+  #infoSektion p {
+    font-size: 2.7vw;
+  }
+  .infoboks {
+    margin-top: 8vw;
+  }
+
+  /*VORES KUNDER SIGER*/
+
+  .treKort {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+  }
+  .treKort .hvidInfoBoks {
+    padding: 5vw;
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: 0vw;
+  }
+
+  #kundeBoks1 {
+    display: none;
+  }
+
+  #hvidloeg {
+    display: none;
+  }
+
+  #kunder .blaaCirkel {
+    width: 70%;
+    position: absolute;
+    top: 1020vw;
+    right: -30vw;
+    z-index: -1;
+  }
+
+  /*FOOTER*/
+
+  footer {
+    flex-wrap: wrap;
+    padding: 20vw 12vw 8vw 12vw;
+    width: 100%;
+  }
+
+  footer div {
+    width: 60%;
+    margin-bottom: 10vw;
+  }
+
+  footer li a {
+    font-size: 3.5vw;
+  }
+
+  footer p {
+    font-size: 3.5vw;
+    padding: 0;
+    padding-top: 2.5vw;
+    margin-bottom: 5vw;
+  }
+
+  .appStoreImages div {
+    width: 35vw;
+    margin: 0;
   }
 }
