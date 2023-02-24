@@ -83,7 +83,8 @@ ul {
   color: #fbfbfb;
   padding: 0.7vw 2.2vw 0.7vw 2.2vw;
   border-radius: 35px;
-  font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .roedKnap:hover {

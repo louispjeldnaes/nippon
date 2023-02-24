@@ -1,3 +1,9 @@
+let closebtn = document.getElementsByClassName("closebtn");
+let openbtn = document.getElementById("main");
+
+openbtn.addEventListener("click", openNav);
+closebtn.addEventlistener("click", closeNav);
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
@@ -9,10 +15,10 @@ function closeNav() {
 /*BESTILLING STEP 1*/
 
 let toPers = document.getElementById("toPers");
-let antalPers = document.getElementById("antalPers");
+let output = document.getElementById("output");
 
-toPers.addEventlistener("click", visAntal);
+toPers.addEventlistener("click", visAntalPers);
 
-function visAntal() {
-  alert("Hej med dig ekstern");
+function visAntalPers() {
+  output.innerHTML = "Hello World";
 }

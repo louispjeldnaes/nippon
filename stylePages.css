@@ -1,5 +1,9 @@
 /*BESTILLING STEP 1 - VÆLG ANTAL*/
 
+#step1main {
+  margin-bottom: 13vw;
+}
+
 .bestilling {
   width: 55%;
   margin: auto;
@@ -31,6 +35,10 @@
   margin-right: 1vw;
 }
 
+.antal div:hover {
+  background-color: #ea6a6a;
+}
+
 .bestillingsoversigt {
   width: 40%;
   background-color: #fbfbfb;
@@ -44,12 +52,9 @@
   text-transform: uppercase;
 }
 
-.bestilling .roedKnap {
-  margin: 7vw auto 5vw auto;
-}
-
 #imagesBestillingStep1 div {
   position: absolute;
+  z-index: -100;
 }
 
 #imagesBestillingStep1 div .ingefaer {
@@ -86,13 +91,44 @@
   transform: rotate(60deg);
   z-index: -1;
 }
+
+/*TEST AF JAVASCRIPT*/
+
+#toStk {
+  padding: 5vw;
+  background-color: #fbfbfb;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #888888;
+}
+
 /*MOBIL*/
 
 @media screen and (max-width: 768px) {
   .bestilling {
     margin-top: 40vw;
+    width: 80%;
+  }
+
+  .valgmuligheder {
+    width: 100%;
+  }
+
+  .antal div {
+    background-color: #fbfbfb;
+    box-shadow: 2px 2px 5px #888888;
+    border-radius: 12px;
+    padding: 10vw 10vw 10vw 10vw;
+    margin-right: 1vw;
+    width: 25%;
+  }
+
+  .bestillingsoversigt {
+    width: 100%;
   }
 }
+
+/* LAptop*/
 
 @media screen and (min-width: 768px) {
   .valgmuligheder .roedKnap {
