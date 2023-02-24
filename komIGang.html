@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylePages.css" />
+    <title>Byg din måltidskasse - lige som du vil have den!</title>
+  </head>
+  <body>
+
+    <header>
+
+        <div id="logo">
+            <a href="index.html"><img  src="images/logoStor.svg" alt="nippon logo">
+            </a>
+        </div>
+      
+
+<!-- LAPTOP NAVIGATION-->
+      <nav id="navLaptop">
+        <ul>
+          <li><a href="#">Kom i gang</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Vores retter</a>
+            <div class="dropdown-content">
+              <a href="#">Ugens retter</a>
+              <a href="#">Opskrifter</a>
+            </div>
+          </li>
+          <li><a href="#">Sådan fungerer det</a></li>
+            <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Om nippon</a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          <li><a href="#">Kontakt</a></li>
+          </li>
+        </ul>
+      </nav>
+      <a href="#"><div class="blaaKnap">Min side</div></a>
+    
+<!-- MOBIL NAVIGATION-->
+    <nav id="navMobil">
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Kom i gang</a>
+        <a href="#">Vores Retter</a>
+        <a href="#">Sådan fungerer det</a>
+        <a href="#">Om nippon</a>
+        <a href="#">Kontakt</a>
+      </div>
+      
+      <div id="main" onclick="openNav()">
+       <img  src="images/barsGrey.svg" alt="">
+      </div>
+    </nav>
+    </header>
+
+
+    <main>
+        <div id="imagesBestillingStep1">
+            <div><img class="ingefaer" src="images/ingefaer.png" alt="ingefaer"></div>
+            <div><img class="roedCirkelIntro"src="images/roedCirkelTegnet.svg" alt=""></div>
+            <div><img class="blaaCirkel" src="images/blaaCirkel.svg" alt=""></div>
+            <div><img class="vegetable" src="images/vegetable.svg" alt=""></div>
+            <div><img class="sesamfroe" src="images/sesamfrøDark.png" alt=""></div>
+        </div>
+
+        <div class="breadcrumbs"></div>
+
+
+        <section  class="bestilling">
+            <div class="valgContainer">
+                <div class="valgmuligheder">
+                    <h3>Antal personer</h3>
+                    <div class="antal">
+                        <div><h5 >2</h5></div>
+                        <div class="treStk"><h5>3</h5></div>
+                        <div class="fireStk"><h5>4</h5></div>
+                    </div>
+                </div>
+                <div class="valgmuligheder">
+                    <h3>Antal måltider</h3>
+                    <div class="antal">
+                        <div><h5>2</h5></div>
+                        <div><h5>3</h5></div>
+                        <div><h5>4</h5></div>
+                        <div><h5>5</h5></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="toPers" class="bestillingsoversigt">
+                <h5 id="antalPers">X</h5>
+                <h5>4 måltider</h5>
+                <h5>+ startpakke</h5>
+                
+                <br>
+                <h5>pris</h5>
+                <h5>rabat</h5>
+                <br>
+                <h5>i alt</h5>
+            </div>
+        <div class="roedKnap">næste step</div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div>
+            <a href=""><h3>Kontakt</h3></a>
+            <ul>
+                <li><a href="#">Oftest stillede spørgsmål</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Kundeservice</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <a href=""><h3>Om nippon</h3></a>
+            <ul>
+                <li><a href="#">Om os</a></li>
+                <li><a href="#">Bæredygtighed & leverandører</a></li>
+                <li><a href="#">Privatlivsindstillinger</a></li>
+                <li><a href="#">Vilkår og betingelser</a></li>
+                <li><a href="#">Smiley-rapporter</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <a href=""><h3>Vores app</h3></a>
+            <p>Planlæg og byg dine måltidskasser<br> lige ved  hånden, 
+                    lige når du har tid!</p>
+            <div class="appStoreImages">
+                <div><img src="images/googlePlay.png" alt=""></div>
+                <div><img src="images/appStore.svg" alt=""></div>
+            </div>
+
+        </div>
+      
+
+    </footer>
+  </body>
+</html>
