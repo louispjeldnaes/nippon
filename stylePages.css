@@ -1,5 +1,15 @@
 /*BESTILLING STEP 1 - VÆLG ANTAL*/
 
+.breadcrumbs {
+  width: 11vw;
+  display: flex;
+  margin: 8vw auto 0vw auto;
+  justify-content: space-between;
+}
+.breadcrumbs a{
+  width: 12%;
+}
+
 #step1main {
   margin-bottom: 13vw;
 }
@@ -8,8 +18,8 @@
   width: 55%;
   margin: auto;
   display: flex;
-  margin-top: 18vw;
-  margin-bottom: 3vw;
+  margin-top: 0vw;
+  margin-bottom: 5vw;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -25,18 +35,22 @@
 
 .antal {
   display: flex;
+
+  
 }
 
 .antal div {
   background-color: #fbfbfb;
   box-shadow: 2px 2px 5px #888888;
-  border-radius: 12px;
+  border-radius: 30px;
   padding: 2vw 2.5vw 2vw 2.5vw;
   margin-right: 1vw;
 }
 
 .antal div:hover {
   background-color: #ea6a6a;
+  cursor: pointer;
+
 }
 
 .bestillingsoversigt {
@@ -52,6 +66,18 @@
   text-transform: uppercase;
 }
 
+.bestillingsoversigt p, .bestillingsoversigt h3{
+  text-align: left;
+  padding: 0vw;
+}
+
+
+.priserTekst {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 #imagesBestillingStep1 div {
   position: absolute;
   z-index: -100;
@@ -59,28 +85,28 @@
 
 #imagesBestillingStep1 div .ingefaer {
   position: relative;
-  top: -27vw;
+  top: -25vw;
   left: -40vw;
   width: 50%;
 }
 
 #imagesBestillingStep1 div .roedCirkelIntro {
-  top: 8vw;
-  left: -20vw;
-  width: 90%;
+  top: 0vw;
+  left: -15vw;
+  width: 140%;
 }
 
 #imagesBestillingStep1 div .blaaCirkel {
-  top: -30vw;
-  right: -70vw;
-  width: 120%;
+  top: -22vw;
+  right: -80vw;
+  width: 140%;
   z-index: -1;
 }
 #imagesBestillingStep1 div .vegetable {
   position: relative;
-  top: -2vw;
-  left: 80vw;
-  width: 60%;
+  top: -1vw;
+  left: 87vw;
+  width: 80%;
 }
 
 #imagesBestillingStep1 div .sesamfroe {
@@ -92,46 +118,831 @@
   z-index: -1;
 }
 
-/*TEST AF JAVASCRIPT*/
+#haandskrevetKomigang {
+  position: absolute;
+  top: 39vw;
+  width: 15%;
+  transform: rotate(10deg);
+  left: 10vw;
+  
+}
 
-#toStk {
-  padding: 5vw;
+#arrowKomigang {
+  width: 5vw;
+  margin-left: 2vw;
+  transform: rotate(100deg);
+  position: absolute;
+  top: 0vw;
+  left: 12vw;
+}
+
+.arrowTekst {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.5vw;
+  color:#5F5658;
+}
+
+/*VÆLG RETTER*/
+#vaelgRetter {
+  margin-top: 3vw;
+}
+
+.filtrering {
+  margin-top: 1.5vw;
+}
+.filtrering a {
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+
+.filtrering a:hover {
+ color: #ea6a6a;
+}
+.plusKnap,
+.minusKnap {
+  position: relative;
+  top: 14.8vw;
+  width: 4vw;
+  z-index: 1;
+  left: 6vw;
+}
+
+.minusKnap {
+  display: none;
+}
+
+#vaelgRetter .tekstboksRetter {
+  top: 13.65vw;
+}
+
+#vaelgRetter .voresRetter {
+  margin-bottom: 5vw;
+}
+
+.opskriftlink {
+  width: 25%;
+}
+.opskriftlink .boksRetter {
+  width: 95%;
+}
+
+.opskriftlink:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#vaelgRetter .bestilling {
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+}
+
+#vacayImage {
+  width: 50%;
+  position: relative;
+  left: 6.5vw;
+  margin-top: 3.5vw;
+}
+.tekstContainer {
+  width: 50%;
+}
+
+#imagesVaelgRetter .sesamfroe{
+  width: 30%;
+  position: absolute;
+  transform: rotate(-50deg);
+  top: 4vw;
+  left: -10vw;
+}
+
+#imagesVaelgRetter .roedCirkelIntro{
+  width: 30%;
+  position: absolute;
+  top: -10vw;
+  left: 83vw;
+}
+
+#imagesVaelgRetter .blaaCirkel{
+  width: 28%;
+  position: absolute;
+  top: 112vw;
+  left: 65vw ;
+  z-index: -1;
+}
+
+#imagesVaelgRetter .blaaCirkel1{
+  width: 28%;
+  position: absolute;
+  top: 60vw;
+  left: -13vw ;
+  z-index: -1;
+}
+
+
+/*INFOBOKS OM RAMEN*/
+
+#infoRamen {
+  width: 70%;
   background-color: #fbfbfb;
-  border: none;
-  border-radius: 20px;
+  position: absolute;
+  top: 7vw; 
+  left: 15vw;
+  z-index: 50;
   box-shadow: 2px 2px 5px #888888;
+  border-radius: 30px;
+  display: none;
+  padding-bottom: 5vw;
+}
+
+#closeRamen {
+ font-size: 5vw;
+  position: absolute;
+  top: -2.5vw;
+  right: -3.5vw;
+}
+
+.opskriftInfo {
+  width: 80%;
+  margin: auto;
+}
+
+#infoRamen #opskriftImagelaptop img {
+  width: 69.3vw;
+  border-radius: 30px 30px 0px 0px;
+}
+
+#infoRamen #opskriftImageMobil img {
+  border-radius: 30px 30px 0px 0px;
+  width: 100%;
+}
+
+#infoRamen h2, #infoRamen h3, .opskriftInfo td {
+  text-align: left;
+}
+
+.ingrediensBoks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ingrediens {
+width: 10%;
+margin: 1vw;
+}
+
+.opskriftInfo .td2 {
+  text-align: right;
+  padding-left: 8vw;
+}
+
+#infoRamen h3 {
+margin-top: 2vw;
+}
+
+#infoRamen h2 {
+  margin-top: 2vw;
+  }
+#infoRamen h4 {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#haandskrevetRamen {
+  position: absolute;
+  top: 60vw;
+  width: 25%;
+  transform: rotate(15deg);
+  left: 40vw;
+}
+
+#arrowRamen {
+  width: 5vw;
+  margin-left: 2vw;
+
+}
+
+.arrowTekst {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.5vw;
+  color:#5F5658;
+}
+
+/*BESTILLING STEP 3*/
+
+#step3main h3 {
+  text-align: left;
+  margin-top: 0.3vw;
+
+}
+
+#step3main {
+  margin-bottom: 10vw;
+}
+.infoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.bestilling label {
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.4vw;
+}
+
+.bestilling .lilleInput {
+  width: 48%;
+}
+
+.bestilling input {
+  border: none;
+  background-color: #fbfbfb;
+  border-radius:20px;
+  height: 2vw;
+  width: 100%;
+  box-shadow: 1px 1px 3px #888888;
+}
+
+#step3main .bestilling p {
+  padding: 0;
+}
+
+#step3main .bestilling {
+  margin-top: 5vw;
+  margin-bottom: 4vw;
+}
+
+#step3knap {
+  width: 12vw;
+  margin: 0vw auto 10vw auto;
+}
+
+#imagesBestillingStep3 .roedCirkelIntro {
+  width: 35%;
+  position: absolute;
+  top: -20vw;
+  left: -5vw;
+
+}
+
+#imagesBestillingStep3 .blaaCirkel {
+  width: 30%;
+  position: absolute;
+  top: -5vw;
+  right: -10vw;
+}
+
+#imagesBestillingStep3 .svampe {
+  width: 15%;
+  position: absolute;
+  top: 15vw;
+  left: 85vw;
+  transform: scaleX(1);
+  transform: rotate(330deg);
+}
+
+#imagesBestillingStep3 .ramen {
+  width: 65%;
+  position: absolute;
+  top: 35vw;
+  z-index: -1;
+  transform: rotate(30deg);
+  left: -5vw;
+}
+
+
+/*OPSKRIFT RAMEN*/
+
+.opskrifter #infoRamen {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F0F0ED;
+  border-radius: 0;
+  box-shadow: 0 0 0 0 ;
+  z-index: -1;
+  margin: auto;
+}
+
+.opskrifter .opskriftInfo {
+  width: 80%;
+  margin: auto;
+}
+
+.opskrifter #infoRamen #opskriftImage img{
+  width: 100vw;
+  border-radius:0px;
+}
+
+#infoOmOpskrifter {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+.opskriftInfoBoks {
+  background-color: #fbfbfb;
+  box-shadow: 2px 2px 5px #888888;
+  border-radius: 30px;
+  padding: 1vw 3vw 3vw 3vw;
+  margin: 1vw 1vw 1vw 0vw ;
+}
+
+.opskriftInfoBoks li, .opskriftInfoBoks p {
+  text-align: left;
+  padding: 0;
+}
+
+.opskrifter .ingrediens {
+  margin-left: 2.3vw;
+}
+
+.opskrifter #haandskrevetRamen {
+  top: 74vw;
+  left: 60vw;
+  width: 20%;
+}
+
+.opskrifter #arrowRamen {
+  position: relative;
+  top: 2vw;
+  left: 1vw;
+
+}
+
+#stepsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.stepsOpskrift {
+  width: 49%;
+}
+
+.stepsOpskrift div, .stepsOpskrift h4, .stepsOpskrift p  {
+  width: 80%;
+  margin: auto;
+}
+
+.stepsOpskrift h3 {
+text-align: center;
+margin-left: 18vw;
+}
+.stepsOpskrift p {
+  margin-left: 8vw;
+  text-align: left;
+}
+
+#SaadanGoerDuOverskrift {
+margin-left: 30vw;
+}
+
+#imagesOpskrift .garlic {
+  width: 25%;
+  position: absolute;
+  top: 105vw;
+  left:-3vw;
+
+}
+
+#imagesOpskrift .roedCirkelIntro {
+  width: 30%;
+  position: absolute;
+  top: 180vw;
+  left: -17vw;
+}
+
+#imagesOpskrift .blaaCirkel {
+  width: 30%;
+  position: absolute;
+  top: 90vw;
+  left: 80vw;
+}
+
+#imagesOpskrift .vegetable {
+  width: 20%;
+  position: absolute;
+  top: 220vw;
+  left: 85vw;
+}
+
+/*BESTILLING STEP 4 - LEVERING*/
+
+#step4main .valgmuligheder {
+  width: 60%;
+}
+#step4main .antal {
+  flex-wrap: wrap;
+}
+
+#step4main .antal div {
+
+  padding: 2vw 1vw 2vw 1vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vw;
+}
+
+#step4main .antal h5 {
+  font-size: 1vw;
+}
+
+#step4main {
+  margin-bottom: 10vw;
+}
+
+#step4main .bestilling {
+  margin-bottom: 6vw;
+}
+
+#imagesBestillingStep4 .garlic {
+  position: absolute;
+  width: 25%;
+  transform: rotate(300deg);
+  left: -1vw;
+  top: 30vw;
+}
+
+#imagesBestillingStep4 .roedCirkelIntro {
+  position: absolute;
+  width: 30%;
+  left: 89vw;
+  top: 10vw;
+
+}
+
+#imagesBestillingStep4 .blaaCirkel {
+  position: absolute;
+  width: 20%;
+  left: -3vw;
+  top: -3vw;
+
+}
+/* Håndskrevet tekst step 4*/
+#haandskrevetStep4 {
+  width: 16%;
+  transform: rotate(10deg);
+  position: absolute;
+  top: 32vw;
+  left: 37vw;
+  
+}
+
+#haandskrevetStep4 .arrow {
+  width: 3.5vw;
+  margin-left: 2vw;
+}
+
+#haandskrevetStep4 .arrowTekst {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.3vw;
+  color:#5F5658;
+}
+
+/*STEP 5 - BETALING */
+
+#step5main {
+  margin-bottom: 10vw;
+}
+
+#step5main .infoContainer h3 {
+  text-align: left;
+}
+
+#step5main .infoContainer {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+#imagesBestillingStep5 .roedCirkelIntro {
+width: 30%;
+position: absolute;
+left: -10vw;
+top: 40vw;
+z-index: -1;
+}
+
+#imagesBestillingStep5 .blaaCirkel {
+width:25%; 
+position: absolute;
+top: -15vw;
+right: -5vw;
+
+}
+
+#imagesBestillingStep5 .garlic {
+  width: 18%;
+  position: absolute;
+  top: 8vw;
+  left: -2vw;
+}
+
+#imagesBestillingStep5 .granataeble {
+  width: 30%;
+  position: absolute;
+  transform: rotate(120deg);
+  top: 35vw;
+  right: -10vw;
+  z-index: -1;
+}
+
+
+/*AFSLUTNING & VELKOMST*/
+
+#velkomstmain {
+  margin-top: 13vw;
+  margin-bottom: 10vw;
+}
+
+#velkomst {
+  width: 60%;
+}
+
+#velkomst div {
+  width: 50%;
+  margin: auto;
+  margin-top: 3vw;
+}
+
+#velkomst p {
+  padding: 0.5vw;
+  width: 85%;
+  margin: auto;
+}
+
+#velkomst h5 {
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1vw;
+}
+
+#velkomstmain .bestillingsoversigt {
+  margin-bottom: 5vw;
+  margin-top: 3vw;
+}
+
+#velkomstmain .roedKnap {
+ position: relative;
+ top: 3vw;
+}
+
+#imagesvelkomst .roedCirkelIntro {
+  width: 40%;
+  position: absolute;
+  top: -10vw;
+  left: 83vw;
+  z-index: -1;
+}
+
+#imagesvelkomst .blaaCirkel {
+  width: 30%;
+  position: absolute;
+  top: 25vw;
+  left: -10vw;
+}
+
+#imagesvelkomst .sesamfroe {
+  width: 30%;
+  position: absolute;
+  top: 35vw;
+  left: 80vw;
+  transform: rotate(90deg);
+  z-index: -1;
 }
 
 /*MOBIL*/
 
 @media screen and (max-width: 768px) {
-  .bestilling {
-    margin-top: 40vw;
-    width: 80%;
+
+  /*STEP 1*/
+
+  .breadcrumbs {
+    margin: 25vw auto 0vw auto;
+    width: 40%;
   }
 
-  .valgmuligheder {
+  .bestilling {
+    margin-top: 0vw;
+    width: 80%;
+  }
+  .antal {
+    flex-wrap: wrap;
+  }
+
+  #imagesBestillingStep1 div .blaaCirkel {
+    top: -55vw;
+    right: -65vw;
     width: 100%;
+  }
+
+  #imagesBestillingStep1 div .vegetable {
+    position: relative;
+    top: -17vw;
+    left: 73vw;
+    width: 65%;
+  }
+  .valgmuligheder {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8vw;
   }
 
   .antal div {
     background-color: #fbfbfb;
     box-shadow: 2px 2px 5px #888888;
     border-radius: 12px;
-    padding: 10vw 10vw 10vw 10vw;
-    margin-right: 1vw;
-    width: 25%;
+    padding: 7vw;
+    margin: 2vw 4vw 2vw 0vw;
+    width: 27%;
   }
 
   .bestillingsoversigt {
+    width: 80%;
+    margin: auto;
+    padding: 8vw 13vw 8vw 13vw;
+    margin-top: 15vw;
+  }
+
+  #imagesBestillingStep1 div .ingefaer, 
+  #imagesBestillingStep1 div .roedCirkelIntro,
+  #imagesBestillingStep1 div .sesamfroe {
+    display: none;
+  }
+
+  .bestilling .roedKnap {
+    padding: 3vw 7vw 3vw 7vw;
+    margin-left: 22vw;
+  }
+
+  .roedKnapLaptop {
+    display: none;
+  }
+
+  #haandskrevetKomigang {
+    display: none;
+  }
+
+  /*VÆLG RETTER*/
+
+  .opskriftlink {
     width: 100%;
   }
+
+  #vaelgRetter .tekstboksRetter {
+    top: 26.5vw;
+  }
+
+  .plusKnap,
+.minusKnap {
+  top: 32vw;
+  width: 13vw;
+  z-index: 1;
+  left: 26vw;
+}
+  
+  #imagesVaelgRetter .roedCirkelIntro {
+    display: none;
+  }
+
+  #imagesVaelgRetter .sesamfroe {
+    top: 11vw;
+    width: 50%;
+    z-index: -1;
+  }
+
+  #imagesVaelgRetter .blaaCirkel {
+    width: 80%;
+  }
+
+  #imagesVaelgRetter .blaaCirkel1 {
+    width: 70%;
+    top: 350vw;
+    left: -30vw;
+  }
+
+  #infoRamen {
+    top: 27vw;
+    padding-bottom: 10vw;
+  }
+
+  #closeRamen {
+    font-size: 10vw;
+    right: -10vw;
+    
+  }
+  #infoRamen #opskriftImagelaptop {
+    display: none;
+  }
+
+
+
+  .ingrediens {
+    width: 20%;
+    margin: 1vw;
+    }
+
+    .ingrediens h5 {
+      font-size: 2.5vw;
+    }
+   .opskriftInfo h4 {
+      font-size: 3vw;
+      text-transform: uppercase;
+      text-align: left;
+      margin-top: 1vw;
+      margin-bottom: 1vw;
+    }
+    .opskriftInfo h3 {
+      margin-top: 3vw;
+    }
+
+    table {
+      margin-bottom: 10vw;
+    }
+    table td {
+      font-size: 3vw;
+    }
+
+    #haandskrevetRamen {
+      display: none;
+    }
+
+    #opskriftKnap {
+      margin-bottom: 10vw;
+    }
+
+    #vacayImage {
+      width: 100%;
+      left: 0vw;
+      margin-bottom: 5vw;
+    }
+
+    .tekstContainer {
+      width: 65%;
+      margin: auto;
+      margin-top: 10vw;
+      margin-bottom: 10vw;
+    }
+
+
+/*BESTILLING STEP 3 - DINE OPLYSNINGER*/
+
+  #imagesBestillingStep3 .ramen, 
+  #imagesBestillingStep3 .roedCirkelIntro {
+    display: none;
+  }
+
+  .infoContainer {
+    width: 80%;
+    margin: auto;
+  }
+
+  .bestilling input {
+    height: 7vw;
+  }
+
+  .infoContainer {
+    margin-bottom: 15vw;
+  }
+
+  #imagesBestillingStep3 .blaaCirkel {
+    width: 75%;
+    top: 15vw;
+    right: -50vw;
+    z-index: -1;
+  }
+
+  .bestilling label {
+    font-size: 4vw;
+  }
+
 }
 
 /* LAptop*/
 
 @media screen and (min-width: 768px) {
-  .valgmuligheder .roedKnap {
+  .roedKnapMobil {
     display: none;
   }
+
+  #opskriftKnap {
+    position: relative;
+    top: -10vw;
+    left: 10vw;
+  }
+
+  .opskriftInfo td {
+    font-size: 1vw;
+  }
+
+  #infoRamen #opskriftImageMobil {
+    display: none;
+  }
+
 }

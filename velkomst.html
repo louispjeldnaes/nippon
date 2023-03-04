@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <script src="script.js" defer></script>
+    <script src="script1.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylePages.css" >
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <title>Velkommen til nippon!</title>
+  </head>
+  <body>
+    <header>
+
+      <!--LOGO-->
+          <div id="logo">
+              <a href="index.html"><img  src="images/LOGO.svg" alt="nippon logo">
+              </a>
+          </div>
+        
+      <!-- LAPTOP NAVIGATION-->
+          <nav id="navLaptop">
+              <ul>
+                  <li><a href="komIGang.html">Kom i gang</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropbtn">Vores retter</a>
+                      <div class="dropdown-content">
+                          <a href="#">Ugens retter</a>
+                          <a href="#">Opskrifter</a>
+                      </div>
+                  </li>
+                  <li><a href="#">Sådan fungerer det</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropbtn">Om nippon</a>
+                      <div class="dropdown-content">
+                          <a href="#">Om os</a>
+                          <a href="#">Bæredygtighed</a>
+                          <a href="#">Leverandører & råvarer</a>
+                      </div>
+                    </li>
+                  <li><a href="#">Kundeservice</a></li>
+                  
+              </ul>
+          </nav>
+  
+          <a href="#"><div class="blaaKnap">Min side</div></a>
+      
+  <!-- MOBIL NAVIGATION-->
+          <nav id="navMobil">
+              <div id="mySidenav" class="sidenav">
+                  <a href="#" id="closebtn" >&times;</a>
+                  <a href="komIGang.html">Kom i gang</a>
+                  <button id="voresretterDropdown"  class="dropdown-btn">Vores retter
+                  <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div id="voresretterLinks" class="dropdown-container">
+                  <a href="#">Ugens retter</a>
+                  <a href="#">Vores opskrifter</a>
+                  </div>
+                  <a href="#">Sådan fungerer det</a>
+                  <a href="#">Om nippon</a>
+                  <a href="#">Kontakt</a>
+              </div>
+              
+              <div id="main"><img  src="images/barsGrey.svg" alt=""></div>
+          </nav>
+      </header>
+
+  <a  href="#">
+    <div id="chatlink">
+        <div id="chatBoble"><img src="images/roedCirkelTegnet.svg" alt=""></div>
+        <h5>Brug for <br> hjælp?</h5>
+        <div><img id="boble" src="images/BOBLE.svg" alt=""></div>
+    </div>
+</a>
+  
+
+    <main id="velkomstmain">
+        <div id="imagesvelkomst">
+          <div><img class="roedCirkelIntro" src="images/roedCirkelTegnet.svg" alt=""></div>
+          <div><img class="blaaCirkel" src="images/blaaCirkel.svg" alt=""></div>
+          <div><img class="sesamfroe" src="images/sesamfrøDark.png" alt=""></div>
+        </div>
+
+    
+
+        <section  class="bestilling">
+            
+            <div id="velkomst">
+                <h2>Velkommen [Navn]!</h2>
+                <div><img src="images/nipponBox.svg" alt=""></div>
+                <p>Glæd dig til din første måltidskasse, som kommer til dig</p>
+                <h5>Lørdag d. 3 februar </h5>
+                <p>Du kan allerede nu planlægge din måltidskasse til næste uge 
+                    på min side - her kan du også rette dine informationer eller 
+                    rette din måltidskasse helt op til 4 dage før levering! </p>
+
+                <a href="#"><span class="roedKnap">Gå til min side</span></a>
+            </div>
+
+            
+    
+            <div class="bestillingsoversigt">
+              <h3>Din bestilling</h3>
+              <h5 id="output1">Personer</h5>
+              <h5 id="output2">4 måltider</h5>
+              <h5>+ startpakke</h5>
+              <p> - Ramen med kylling</p>
+              <p> - Sticky kødboller</p>
+              <p> - Japanske svinetacos</p>
+              
+              <br>
+              <div class="priserTekst">
+                <h5>pris</h5>
+                <h5 id="udregnetPris">450,-</h5>
+              </div>
+              <div class="priserTekst">
+                <h5>rabat</h5>
+                <h5 id="rabat">150,-</h5>
+              </div>
+              <br>
+              <div class="priserTekst">
+                <h5>i alt</h5>
+                <h5 id="endeligPris">300,-</h5>
+              </div>
+          </div>
+            
+        </section>
+        
+        
+        
+    </main>
+
+    <footer>
+      <div>
+        <a href=""><h3>Kontakt</h3></a>
+        <ul>
+          <li><a href="#">Oftest stillede spørgsmål</a></li>
+          <li><a href="#">Chat</a></li>
+          <li><a href="#">Kundeservice</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <a href=""><h3>Om nippon</h3></a>
+        <ul>
+          <li><a href="#">Om os</a></li>
+          <li><a href="#">Bæredygtighed & leverandører</a></li>
+          <li><a href="#">Privatlivsindstillinger</a></li>
+          <li><a href="#">Vilkår og betingelser</a></li>
+          <li><a href="#">Smiley-rapporter</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <a href=""><h3>Vores app</h3></a>
+        <p>
+          Planlæg og byg dine måltidskasser<br>
+          lige ved hånden, lige når du har tid!
+        </p>
+        <div class="appStoreImages">
+          <div><img src="images/googlePlay.png" alt=""></div>
+          <div><img src="images/appStore.svg" alt=""></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

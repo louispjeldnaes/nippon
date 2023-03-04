@@ -75,7 +75,8 @@ ul {
 }
 
 .blaaKnap:hover {
-  background-color: #1ed4a7;
+  background-color: #ea6a6a;
+  color: #fbfbfb;
 }
 
 .roedKnap {
@@ -88,7 +89,9 @@ ul {
 }
 
 .roedKnap:hover {
-  background-color: #1ed4a7;
+  background-color:#cad9d0;
+  color: #5F5658;
+
 }
 
 /*HEADER*/
@@ -104,8 +107,11 @@ header {
   z-index: 100;
 }
 #logo {
-  width: 10vw;
   margin-right: 5vw;
+}
+
+#logo img {
+  width: 9vw;
 }
 
 header ul {
@@ -122,7 +128,7 @@ header li {
 header li a,
 .dropbtn {
   display: inline-block;
-  color: #5f5658;
+  color: #5F5658;
   text-transform: uppercase;
   text-align: center;
   margin: 1.5vw;
@@ -144,9 +150,10 @@ header li.dropdown {
   display: none;
   position: absolute;
   background-color: #fbfbfb;
+  box-shadow:  0 6px 4px -2px #aba9a9; 
   min-width: 10vw;
-  min-height: 200px;
-  box-shadow: 2px 2px 15px #888888;
+  min-height: 100px;
+  border-radius: 0px 0px 20px 20px;
   z-index: 1;
 }
 
@@ -179,18 +186,32 @@ header li.dropdown {
   padding-top: 60px;
 }
 
-.sidenav a {
+
+.sidenav a, .dropdown-btn {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 5vw;
   color: #818181;
+  text-transform: uppercase;
   display: block;
+  border: none;
+  background: none;
+  width:100%;
+  cursor: pointer;
+  outline: none;
   transition: 0.3s;
 }
 
-.sidenav a:hover {
+.sidenav a:hover, .dropdown-btn:hover {
   color: #ea6a6a;
 }
+
+
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+
 
 .sidenav .closebtn {
   position: absolute;
@@ -274,6 +295,51 @@ header li.dropdown {
   top: 57vw;
 }
 
+#haandskrevetForside {
+  position: absolute;
+  top: 32vw;
+  width: 15%;
+  transform: rotate(20deg);
+  left: 68vw;
+  
+}
+
+#arrowForside {
+  width: 5vw;
+  margin-left: 2vw;
+}
+
+.arrowTekst {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.5vw;
+  color:#5F5658;
+}
+
+#chatlink {
+  width: 8vw;
+  z-index: 3;
+  position: fixed;
+  top: 45vw;
+  right: -1vw;
+}
+
+#chatlink h5  {
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 1vw;
+}
+#boble {
+  width: 3vw;
+  padding-top: 0.2vw;
+  color: #fbfbfb;
+}
+
+#chatlink h5, #boble {
+  position: relative;
+  top: -6.5vw;
+  left: 0vw;
+}
+
 /*SEKTION 2 - HVORDAN FUNGERER DET? */
 
 .hvidInfoBoks {
@@ -321,7 +387,7 @@ header li.dropdown {
 #sesamForside {
   width: 30%;
   position: absolute;
-  top: 95vw;
+  top: 87vw;
   z-index: -1;
   left: 5vw;
 }
@@ -335,6 +401,7 @@ header li.dropdown {
   width: 80%;
   margin: auto;
   margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 .boksRetter {
@@ -344,6 +411,11 @@ header li.dropdown {
   height: 25vw;
   border-radius: 30px;
   box-shadow: 2px 2px 5px #888888;
+}
+
+.boksRetter:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .tekstboksRetter {
@@ -373,62 +445,88 @@ header li.dropdown {
 }
 
 #ramen {
-  background-image: url(images/chickenRamen.jpg);
+  background-image: url(images/chickenRamen_700px.jpg);
   background-size: cover;
 }
 
 #meatballs {
-  background-image: url(images/meatballs.jpg);
+  background-image: url(images/meatballs_700px.jpg);
   background-size: cover;
   background-size: 105%;
   background-position: bottom;
 }
 
 #sesamKylling {
-  background-image: url(images/sesameChicken.jpg);
+  background-image: url(images/sesameChicken_700px.jpg);
   background-size: cover;
   background-size: 130%;
   background-position: center left;
 }
 #porkTaco {
-  background-image: url(images/JapanesePorkTaco.jpg);
+  background-image: url(images/JapanesePorkTaco_700px.jpg);
   background-size: cover;
   background-size: 130%;
   background-position: bottom;
 }
 
 #stickyKylling {
-  background-image: url(images/stickyChicken.jpg);
+  background-image: url(images/stickyChicken_700px.jpg);
   background-size: cover;
   background-position: bottom;
 }
 
 #teriyakiKylling {
-  background-image: url(images/sweetTeriyajiChicken.jpg);
+  background-image: url(images/sweetTeriyajiChicken_700px.jpg);
   background-size: cover;
   background-size: 115%;
   background-position: bottom center;
 }
 
 #spicyRamen {
-  background-image: url(images/spicyRamen.jpg);
+  background-image: url(images/spicyRamen_700px.jpg);
   background-size: cover;
   background-position: bottom;
 }
 
-#voresRetter .blaaCirkel {
+#svinemoerbrad {
+  background-image: url(images/svinemørbrad_700px.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#pulledKylling {
+  background-image: url(images/pulledChicken_700px.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#japanskSalat {
+  background-image: url(images/japanskSalat_700px.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+#ramen1 {
+  background-image: url(images/veggieRamen_700px.jpg);
+  background-size: cover;
+  background-position: top;
+  
+}
+
+.voresRetter .blaaCirkel {
   width: 27%;
   position: absolute;
   top: 160vw;
   left: -10vw;
-  z-index: -1;
+  z-index: -6;
 }
 
-#voresRetter .vegetable {
+.voresRetter .vegetable {
   position: absolute;
   width: 18%;
   top: 177vw;
   left: 0;
+  z-index: -5;
 }
 
 /*4. SEKTION - HVORFOR NIPPON?*/
@@ -467,17 +565,13 @@ header li.dropdown {
   padding: 0;
 }
 
-#infoSektion p {
-  padding: 0.5vw 0vw 0.5vw 0vw;
-}
-
 .infoboks img {
-  width: 8vw;
+  width: 7.5vw;
   margin: 2vw;
 }
 
 .infoTekst {
-  padding-top: 1vw;
+  padding-top: 3vw;
   width: 100%;
 }
 
@@ -510,7 +604,7 @@ header li.dropdown {
   width: 20%;
   transform: rotate(300deg);
   position: absolute;
-  top: 225vw;
+  top: 220vw;
   left: -1vw;
 }
 
@@ -518,7 +612,7 @@ header li.dropdown {
   width: 30%;
   position: absolute;
   top: 230vw;
-  right: 5vw;
+  right: 0vw;
   z-index: -1;
 }
 
@@ -539,6 +633,9 @@ footer p {
 footer li a {
   text-transform: none;
   font-size: 1.1vw;
+}
+footer li a:hover {
+  color: #ea6a6a;
 }
 
 footer p {
@@ -593,13 +690,14 @@ footer p {
   }
 
   .roedKnap {
-    padding: 1vw 3vw 1vw 3vw;
+    padding: 3vw 7vw 3vw 7vw;
     border-radius: 35px;
   }
 
   a {
     font-size: 3.5vw;
   }
+
 
   /*Header*/
 
@@ -614,9 +712,12 @@ footer p {
   }
 
   #logo {
-    width: 35vw;
     margin-left: 2vw;
   }
+  #logo img {
+    width: 32vw;
+  }
+  
 
   /*Intro*/
 
@@ -658,6 +759,14 @@ footer p {
     width: 28%;
     right: -12vw;
     top: 97vw;
+  }
+
+  #haandskrevetForside {
+    display: none;
+  }
+
+  #chatlink {
+ display: none;
   }
 
   /*Hvordan fungerer det-sektion*/
@@ -710,7 +819,7 @@ footer p {
   }
 
   /*VORES RETTER*/
-  #voresRetter {
+  .voresRetter {
     margin-top: 20vw;
   }
 
@@ -730,8 +839,8 @@ footer p {
     padding-left: 6vw;
   }
 
-  #voresRetter .blaaCirkel,
-  #voresRetter .vegetable {
+  .voresRetter .blaaCirkel,
+  .voresRetter .vegetable {
     display: none;
   }
 
@@ -804,6 +913,10 @@ footer p {
     top: 1020vw;
     right: -30vw;
     z-index: -1;
+  }
+
+  #kunder .stjerner img {
+    width: 7vw;
   }
 
   /*FOOTER*/

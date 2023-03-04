@@ -1,102 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script src="script1.js" defer></script>
     <title>Nippon - Japansk måltidskasse lige til døren!</title>
   </head>
 
-
   <body>
+    <!--HEADER-->
+
     <header>
 
+    <!--LOGO-->
         <div id="logo">
-            <a href="index.html"><img  src="images/logoStor.svg" alt="nippon logo">
+            <a href="index.html"><img  src="images/LOGO.svg" alt="nippon logo">
             </a>
         </div>
       
+    <!-- LAPTOP NAVIGATION-->
+        <nav id="navLaptop">
+            <ul>
+                <li><a href="komIGang.html">Kom i gang</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Vores retter</a>
+                    <div class="dropdown-content">
+                        <a href="#">Ugens retter</a>
+                        <a href="#">Opskrifter</a>
+                    </div>
+                </li>
+                <li><a href="#">Sådan fungerer det</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Om nippon</a>
+                    <div class="dropdown-content">
+                        <a href="#">Om os</a>
+                        <a href="#">Bæredygtighed</a>
+                        <a href="#">Leverandører & råvarer</a>
+                    </div>
+                </li>
+                <li><a href="#">Kundeservice</a></li>
+                
+            </ul>
+        </nav>
 
-<!-- LAPTOP NAVIGATION-->
-      <nav id="navLaptop">
-        <ul>
-          <li><a href="komIGang.html">Kom i gang</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Vores retter</a>
-            <div class="dropdown-content">
-              <a href="#">Ugens retter</a>
-              <a href="#">Opskrifter</a>
-            </div>
-          </li>
-          <li><a href="#">Sådan fungerer det</a></li>
-            <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Om nippon</a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          <li><a href="#">Kontakt</a></li>
-          </li>
-        </ul>
-      </nav>
-      <a href="#"><div class="blaaKnap">Min side</div></a>
+        <a href="#"><div class="blaaKnap">Min side</div></a>
     
 <!-- MOBIL NAVIGATION-->
-    <nav id="navMobil">
-    <div id="mySidenav" class="sidenav">
-        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="komIGang.html">Kom i gang</a>
-        <a href="#">Vores Retter</a>
-        <a href="#">Sådan fungerer det</a>
-        <a href="#">Om nippon</a>
-        <a href="#">Kontakt</a>
-      </div>
-      
-      <div id="main">
-       <img  src="images/barsGrey.svg" alt="">
-      </div>
-    </nav>
+        <nav id="navMobil">
+            <div id="mySidenav" class="sidenav">
+                <a href="#" id="closebtn" >&times;</a>
+                <a href="komIGang.html">Kom i gang</a>
+                <button id="voresretterDropdown"  class="dropdown-btn">Vores retter
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div id="voresretterLinks" class="dropdown-container">
+                <a href="#">Ugens retter</a>
+                <a href="#">Vores opskrifter</a>
+                </div>
+                <a href="#">Sådan fungerer det</a>
+                <a href="#">Om nippon</a>
+                <a href="#">Kontakt</a>
+            </div>
+            
+            <div id="main"><img  src="images/barsGrey.svg" alt=""></div>
+        </nav>
     </header>
 
-
-
-
     <main>
-        <section id="intro" ><!--Intro-->
+
+        <!--INTRO TIL NIPPON-->
+        <section id="intro" >
+
             <section id="imagesVenstre">
-                <div><img class="roedCirkelIntro" src="images/roedCirkelTegnet.svg" alt="roed cirkel med tegnet streger">
-                
+                <div><img class="roedCirkelIntro" src="images/roedCirkelTegnet.svg" alt="roed cirkel med tegnet streger"></div>
                 <div><img id="spinat" src="images/spinat.png" alt=""></div>
                 <div><img class="svampe" src="images/svampe.svg" alt=""></div>
-                </section>
+            </section>
+
             <section id="introTekst">
                 <h1>Nemt. Sundt. Lækkert. Japansk. Økologisk.</h1>
                 <h5>Med Nippons måltidskasser får du friske, lækre 
                     råvarer og nye spændende opskrifter med et japansk twist.
                     Det bliver det endda leveret lige til døren! Så kan 
                     I lave velsmagende aftensmad på ingen tid.  </h5>
-                <a href="#"><span class="roedKnap">se måltidskasser</span></a>
+                <a href="komIGang.html"><span class="roedKnap">se måltidskasser</span></a>
             </section>
+
             <section id="imagesHoejre">
                 <div><img id="meatballCutout" src="images/meatballsCutout.png" alt=""></div>
                 <div><img class="blaaCirkel" src="images/blaaCirkel.svg" alt=""></div>
                 <div><img class="vegetable" src="images/vegetable.svg" alt=""></div>
-                <div>
-                    <div><img src="" alt=""></div>
-                    <p>til dig du skønne!</p>
+                <div id="haandskrevetForside">
+                    <div id="arrowForside"><img src="images/arrow.svg" alt=""></div>
+                    <p class="arrowTekst">TIL DIG <br> Startsæt med 3 lækre japanske saucer</p>
                 </div>
             </section>
+
         </section>
 
+        <!--CHATKNAP-->
+        <a  href="#">
+            <div id="chatlink">
+                <div id="chatBoble"><img src="images/roedCirkelTegnet.svg" alt=""></div>
+                <h5>Brug for <br> hjælp?</h5>
+                <div><img id="boble" src="images/BOBLE.svg" alt=""></div>
+            </div>
+        </a>
 
-        <section class="hvidInfoBoks"><!-- Hvordan fungerer det?-->
+        <!-- HVORDAN FUNGERER DET? - SEKTION-->
+        <section class="hvidInfoBoks">
             <h2>Hvordan fungerer det?</h2>
             <div id="treKolonner">
                 <div class="kolonne">
@@ -119,13 +139,13 @@
                         hjemmelavede mad!  </p>
                 </div>
             </div>
-            <a href="#"><span class="blaaKnap">Kom i gang</span></a>
+            <a href="komIGang.html"><span class="blaaKnap">Kom i gang</span></a>
         </section>
 
         <div id="sesamForside"><img src="images/sesamfrøDark.png" alt=""></div>
-
-
-        <section id="voresRetter"><!--Vores retter-->
+        
+        <!--Vores retter-->
+        <section class="voresRetter">
             <h2>Vores retter</h2>
             <div class="containerRetter">
                 <div class="boksRetter" id="ramen">
@@ -139,21 +159,21 @@
                     <div class="tekstboksRetter">
                         <h3>Sticky kødboller</h3>
                         <h5>med ingefærris</h5>
-                        <p>30 min - nem - børnevenlig</p>
+                        <p>20 min - børnevenlig</p>
                     </div>
                 </div>
                 <div class="boksRetter" id="porkTaco">
                     <div class="tekstboksRetter">
                         <h3>Japanske svinetacos</h3>
                         <h5>m. sesammayo og chili</h5>
-                        <p>20 min - nem - børnevenlig</p>
+                        <p>20 min - hurtig</p>
                     </div>
                 </div>
                 <div class="boksRetter" id="sesamKylling">
                     <div class="tekstboksRetter">
                         <h3>Sesamkylling</h3>
                         <h5>m. broccoli & ris</h5>
-                        <p>20 min - nem - børnevenlig</p>
+                        <p>25 min - børnevenlig</p>
                     </div>
                 </div>
 
@@ -161,28 +181,28 @@
                     <div class="tekstboksRetter">
                         <h3>Sticky kylling</h3>
                         <h5>med hvidløgsris og lime</h5>
-                        <p>20 min - nem - børnevenlig</p>
+                        <p>20 min - kalorielet</p>
                     </div>
                 </div>
                 <div class="boksRetter" id="teriyakiKylling">
                     <div class="tekstboksRetter">
                         <h3>Sød teriyakikylling</h3>
                         <h5>m. nudler og grønt</h5>
-                        <p>20 min - nem - børnevenlig</p>
+                        <p>20 min - børnevenlig</p>
                     </div>
                 </div>
                 <div class="boksRetter" id="spicyRamen">
                     <div class="tekstboksRetter">
                         <h3>Spicy Ramen</h3>
                         <h5>med chili & koriander</h5>
-                        <p>20 min - nem - børnevenlig</p>
+                        <p>25 min - vegetarisk</p>
                     </div>
                 </div>
-                <div class="boksRetter" id="ramen">
+                <div class="boksRetter" id="svinemoerbrad">
                     <div class="tekstboksRetter">
-                        <h3>Ramen med kylling</h3>
-                        <h5>grøntsager & æg</h5>
-                        <p>20 min - nem - børnevenlig</p>
+                        <h3>Svinemørbrad </h3>
+                        <h5>m. broccoli & peanuts</h5>
+                        <p>20 min - børnevenlig</p>
                     </div>
                 </div>
             </div>
@@ -243,10 +263,10 @@
                         gennemført ud. Med lækre opskrifter og passende ingredienser. 
                         Jeg kommer sikkert til at bestille igen!"</p>
                         <div class="stjerner">
-                            <img src="images/STAR.svg" alt="">
-                            <img src="images/STAR.svg" alt="">
-                            <img src="images/STAR.svg" alt="">
-                            <img src="images/STAR.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
                         </div>
                 </div>
                 <div class="hvidInfoBoks">
@@ -254,11 +274,11 @@
                         gennemført ud. Med lækre opskrifter og passende ingredienser. 
                         Jeg kommer sikkert til at bestille igen!"</p>
                         <div class="stjerner">
-                            <img src="images/STAR.svg" alt="">
-                            <img src="images/STAR.svg" alt="">
-                            <img src="images/STAR.svg" alt="">
-                            <img src="images/STAR.svg" alt="">
-                            <img src="images/STAR.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
                         </div>
                 </div>
                 <div class="hvidInfoBoks" id="kundeBoks1">
@@ -266,11 +286,11 @@
                         gennemført ud. Med lækre opskrifter og passende ingredienser. 
                         Jeg kommer sikkert til at bestille igen!"</p>
                         <div class="stjerner">
-                            <img src="images/STAR.svg" alt="">
-                            <img src="images/STAR.svg" alt="">
-                            <img src="images/STAR.svg" alt="">
-                            <img src="images/STAR.svg" alt="">
-                            <img src="images/STAR.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
+                            <img src="images/STARny.svg" alt="">
                         </div>
                 </div>
             </div>

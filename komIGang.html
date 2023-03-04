@@ -1,71 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="stylePages.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Byg din måltidskasse - lige som du vil have den!</title>
-  </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylePages.css">
+    <script src="script.js" defer></script>
+    <script src="script1.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    </head>
   <body>
 
     <header>
 
-        <div id="logo">
-            <a href="index.html"><img  src="images/logoStor.svg" alt="nippon logo">
-            </a>
-        </div>
+      <!--LOGO-->
+          <div id="logo">
+              <a href="index.html"><img  src="images/LOGO.svg" alt="nippon logo">
+              </a>
+          </div>
+        
+      <!-- LAPTOP NAVIGATION-->
+          <nav id="navLaptop">
+              <ul>
+                  <li><a href="komIGang.html">Kom i gang</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropbtn">Vores retter</a>
+                      <div class="dropdown-content">
+                          <a href="#">Ugens retter</a>
+                          <a href="#">Opskrifter</a>
+                      </div>
+                  </li>
+                  <li><a href="#">Sådan fungerer det</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropbtn">Om nippon</a>
+                      <div class="dropdown-content">
+                          <a href="#">Om os</a>
+                          <a href="#">Bæredygtighed</a>
+                          <a href="#">Leverandører & råvarer</a>
+                      </div>
+                    </li>
+                  <li><a href="#">Kundeservice</a></li>
+                  
+              </ul>
+          </nav>
+  
+          <a href="#"><div class="blaaKnap">Min side</div></a>
       
+  <!-- MOBIL NAVIGATION-->
+          <nav id="navMobil">
+              <div id="mySidenav" class="sidenav">
+                  <a href="#" id="closebtn" >&times;</a>
+                  <a href="komIGang.html">Kom i gang</a>
+                  <button id="voresretterDropdown"  class="dropdown-btn">Vores retter
+                  <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div id="voresretterLinks" class="dropdown-container">
+                  <a href="#">Ugens retter</a>
+                  <a href="#">Vores opskrifter</a>
+                  </div>
+                  <a href="#">Sådan fungerer det</a>
+                  <a href="#">Om nippon</a>
+                  <a href="#">Kontakt</a>
+              </div>
+              
+              <div id="main"><img  src="images/barsGrey.svg" alt=""></div>
+          </nav>
+      </header>
 
-<!-- LAPTOP NAVIGATION-->
-      <nav id="navLaptop">
-        <ul>
-          <li><a href="#">Kom i gang</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Vores retter</a>
-            <div class="dropdown-content">
-              <a href="#">Ugens retter</a>
-              <a href="#">Opskrifter</a>
-            </div>
-          </li>
-          <li><a href="#">Sådan fungerer det</a></li>
-            <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Om nippon</a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          <li><a href="#">Kontakt</a></li>
-          </li>
-        </ul>
-      </nav>
-      <a href="#"><div class="blaaKnap">Min side</div></a>
-    
-<!-- MOBIL NAVIGATION-->
-    <nav id="navMobil">
-    <div id="mySidenav" class="sidenav">
-        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Kom i gang</a>
-        <a href="#">Vores Retter</a>
-        <a href="#">Sådan fungerer det</a>
-        <a href="#">Om nippon</a>
-        <a href="#">Kontakt</a>
-      </div>
-      
-      <div id="main" onclick="openNav()">
-       <img  src="images/barsGrey.svg" alt="">
-      </div>
-    </nav>
-    </header>
+  <a  href="#">
+    <div id="chatlink">
+        <div id="chatBoble"><img src="images/roedCirkelTegnet.svg" alt=""></div>
+        <h5>Brug for <br> hjælp?</h5>
+        <div><img id="boble" src="images/BOBLE.svg" alt=""></div>
+    </div>
+</a>
+
+<div class="breadcrumbs">
+  <a href="komIGang.html"><img src="images/redDot.svg" alt=""></a>
+  <a href="vaelgRetter.html"><img src="images/whiteDot.svg" alt=""></a>
+  <a href="dineOplysninger.html"><img src="images/whiteDot.svg" alt=""></a>
+  <a href="levering.html"><img src="images/whiteDot.svg" alt=""></a>
+  <a href="betaling.html"><img src="images/whiteDot.svg" alt=""></a>
+</div>
 
 
     <main id="step1main">
         <div id="imagesBestillingStep1">
             <div><img class="ingefaer" src="images/ingefaer.png" alt="ingefaer"></div>
-            <div><img class="roedCirkelIntro"src="images/roedCirkelTegnet.svg" alt=""></div>
+            <div><img class="roedCirkelIntro" src="images/roedCirkelTegnet.svg" alt=""></div>
             <div><img class="blaaCirkel" src="images/blaaCirkel.svg" alt=""></div>
             <div><img class="vegetable" src="images/vegetable.svg" alt=""></div>
             <div><img class="sesamfroe" src="images/sesamfrøDark.png" alt=""></div>
@@ -78,36 +103,55 @@
                 <div class="valgmuligheder">
                     <h3>Antal personer</h3>
                     <div class="antal">
-                        <div><h5>2</h5></div>
-                        <div class="treStk"><h5>3</h5></div>
-                        <div class="fireStk"><h5>4</h5></div>
+                        <div id="toPersoner"><h5>2</h5></div>
+                        <div id="trePers"><h5>3</h5></div>
+                        <div id="firePers"><h5>4</h5></div>
                     </div>
                 </div>
                 <div class="valgmuligheder">
+
                     <h3>Antal måltider</h3>
                     <div class="antal">
-                        <div><h5>2</h5></div>
-                        <div><h5>3</h5></div>
-                        <div><h5>4</h5></div>
-                        <div><h5>5</h5></div>
+                        <div id="toMaaltider"><h5>2</h5></div>
+                        <div id="treMaaltider"><h5>3</h5></div>
+                        <div id="fireMaaltider"><h5>4</h5></div>
+                        <div id="femMaaltider"><h5>5</h5></div>
                     </div>
                 </div>
             </div>
-    
+            <a class="roedKnapMobil" href="vaelgRetter.html"><span class="roedKnap">næste step</span></a>
             <div class="bestillingsoversigt">
-                <p id="output"></p>
-                <h5>4 måltider</h5>
+                <h3>Din bestilling</h3>
+                <h5 id="output1">Personer</h5>
+                <h5 id="output2">4 måltider</h5>
                 <h5>+ startpakke</h5>
                 
                 <br>
-                <h5>pris</h5>
-                <h5>rabat</h5>
+                <div class="priserTekst">
+                  <h5>pris</h5>
+                  <h5 id="udregnetPris"></h5>
+                </div>
+                <div class="priserTekst">
+                  <h5>rabat</h5>
+                  <h5 id="rabat">150,-</h5>
+                </div>
                 <br>
-                <h5>i alt</h5>
+                <div class="priserTekst">
+                  <h5>i alt</h5>
+                  <h5 id="endeligPris"></h5>
+                </div>
             </div>
+
+            
             
         </section>
-    <a href="#"><span class="roedKnap">næste step</span></a>
+        <a class="roedKnapLaptop" href="vaelgRetter.html"><span class="roedKnap">næste step</span></a>
+    
+        <div id="haandskrevetKomigang">
+          <div id="arrowKomigang"><img src="images/arrow.svg" alt=""></div>
+          <p class="arrowTekst">TIP <br> Du kan altid ændre dine valg under min side</p>
+      </div>
+
 
     </main>
 
